@@ -1,0 +1,18 @@
+Ýlk elemana root denir.
+Ýki çocuðu birden NULL olan düðümlere leaf (yaprak) denir.
+
+roottan baþlayarak root soluna roottan küçük saðýna ise roottan büyük düðüm eklenir.
+Örn. 	
+
+			 50    -> Root
+		       /    \
+		      25    90  
+		     /  \   / 
+		    14  28  58
+		  leaf  leaf leaf deðil (çünkü 90'ýn tek çocuðu var.)
+
+Leaf : Ýki çocuðu NULL olacak.
+
+h = 2 (50 bir jenerasyon, 25 ve 90 da bir jenerasyon onlarýn çocuklarý sayýlmýyor. Yani 2 jenerasyon var)
+
+düðüm sayýsý = (2 ^(2 + 1)) - 1 = 7 düðüm olabilir. (90'ýn bir var o da 58 bir tane daha olsaydý toplam 7 düðüm olacaktý.)
